@@ -6,7 +6,7 @@ all:
 	--metadata date="`date +%d/%m/%Y`" \
 	-o output.pdf \
 
-latex:
+latex-full:
 	pandoc \
 	-tlatex \
 	--defaults='build_config.yaml' \
@@ -14,7 +14,7 @@ latex:
 	-s \
 	-o output.tex \
 
-latex-standalone:
+latex-bare:
 	pandoc \
 	-tlatex \
 	--defaults='build_config.yaml' \
