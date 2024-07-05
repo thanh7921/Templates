@@ -3,7 +3,6 @@
 The folder structure:
 
 ```
-
 .
 ├── clang-format
 │   ├── chromium_style
@@ -14,34 +13,49 @@ The folder structure:
 │   ├── microsoft_style
 │   ├── mozilla_style
 │   └── webkit_style
+├── cv
+│   ├── cv.tex
+│   ├── Makefile
+│   └── portrait.jpg
 ├── image
 │   └── bk_logo.png
+├── license
+│   └── mit
 ├── make
 │   └── Makefile_C_C++
 ├── pandoc_markdown
-│   ├── pandoc_markdown_syntax.md
+│   ├── fancy_report
 │   ├── simple_report
-│   └── slide
+│   ├── slide
+│   └── pandoc_markdown_syntax.md
 └── README.md
 
-7 directories, 12 files
 ```
 
-## Pandoc markdown
+## Clang format file
 
-I use pandoc to convert all my report and slide at school to pdf. The `pandoc_markdown` folder
-contains just that - a template for simple report and a template for a slide.
+All the setting for clang-format (store in files) is stored here. My custom style (which I
+personally like) is `custom_cpp_style`.
+
+## CV 
+
+Latex template for my CV. Invoke make to compile the final CV as pdf file.
+
+## Image
+
+I store images that I used often here
+
+## License 
+
+Commonly used license, contain MIT for now.
 
 ## Make
 
 I also use makefile for various purpose, currently I have one for small to medium sized C/C++
 project.
 
-## Image
+## Pandoc markdown
 
-I store images that I used often here
+I use pandoc to convert all my report and slide at school to pdf. The `pandoc_markdown` folder
+contains template for simple report, slide and fancy report.
 
-## Clang format file
-
-All the setting for clang-format (store in files) is stored here. My custom style (which I
-personally like) is `custom_cpp_style`.
