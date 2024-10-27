@@ -16,7 +16,7 @@ resource-path:
   - .
 
 ### OPTION FOR GENERAL WRITER
-highlight-style: pygments
+highlight-style: tango
 
 ### OPTION FOR SPECIFIC WRITER
 #listings: true
@@ -26,4 +26,3 @@ citeproc: true
 bibliography:
   - bib/bibliography.bib
 csl: bib/ieee.csl
-

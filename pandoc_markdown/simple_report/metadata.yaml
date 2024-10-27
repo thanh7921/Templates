@@ -9,16 +9,30 @@ author:
 date: This will be automated
 abstract: Some abstract content
 subject: Some subject
+keywords: 
+- Some keywords
+lang: en
 
 ### DOCUMENT CONFIGURATION
 documentclass: article
 classoption:
   - a4paper
   - titlepage
+  - oneside
+  - onecolumn
 geometry:
   - margin=1in
 numbersections: true
 colorlinks: true
+# fontsize: 10pt
+# header-includes:
+#   - \usepackage{multirow}
+#   - \usepackage{graphicx}
+#   - \setlength{\columnsep}{0.25in}
+
+### CITATION
+reference-section-title: References
+link-citations: true
 
 ### FRONT MATTERS
 toc: true

@@ -1,0 +1,39 @@
+---
+### METADATA
+title: Generic Custom Extension Interface for RISC-V Embedded Processor
+subtitle: Outline of future research plan
+author: Thanh Nguyen
+date: This will be automated
+keywords: 
+- Computer Architechture
+- RISC-V
+- Softcore processor
+lang: en
+
+### DOCUMENT CONFIGURATION
+documentclass: article
+classoption:
+  - a4paper
+  - oneside
+  - twocolumn
+geometry:
+  - margin=0.5in
+  - tmargin=1in
+  - bmargin=1in
+numbersections: true
+colorlinks: false
+fontsize: 10pt
+header-includes:
+  - \usepackage{multirow}
+  - \usepackage{graphicx}
+  - \setlength{\columnsep}{0.25in}
+
+### CITATION
+reference-section-title: References
+link-citations: true
+
+### FRONT MATTERS
+toc: false
+toc-depth: 2
+lof: false
+lot: false
