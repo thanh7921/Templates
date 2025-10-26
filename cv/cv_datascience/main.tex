@@ -1,0 +1,242 @@
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.92]{geometry}
+\recomputelengths
+%\setlength{\footskip}{149.60005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% document language
+\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+% personal data
+\name{Nguyễn Trần Phước Thành}{}
+\title{Aspiring data scientist}                               % optional, remove / comment the line if not wanted
+%\born{7 September 2001}                                 % optional, remove / comment the line if not wanted
+\address{Binh Thanh District}{Ho Chi Minh City}{Vietnam}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+84 342384838}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{tranphuocthanh01@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\photo[80pt][0pt]{formal_4x6.jpg}
+%\quote{Be brave. Be curious. Be kind.}
+
+% Social icons
+%\social[linkedin]{thành-nguyễn-trần-phước-8b7a32317}                        % optional, remove / comment the line if not wanted
+% \social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+
+%\social[github]{ntpt7921}                              % optional, remove / comment the line if not wanted
+%\social[github]{ntpthanh7921}
+% \social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[codeberg]{jdoe}                            % optional, remove / comment the line if not wanted
+% \social[bitbucket]{jdoe}                           % optional, remove / comment the line if not wanted
+% \social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
+
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+% \social[orcid]{0000-0000-000-000}                  % optional, remove / comment the line if not wanted
+% \social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
+
+% \social[twitter]{ji\_doe}                          % optional, remove / comment the line if not wanted
+% \social[mastodon]{mastodon.social/web/@user}       % optional, remove / comment the line if not wanted
+% \social[telegram]{jdoe}                            % optional, remove / comment the line if not wanted
+% \social[whatsapp]{12345678901}                     % optional, remove / comment the line if not wanted
+% \social[signal]{12345678901}                       % optional, remove / comment the line if not wanted
+% \social[matrix]{@johndoe:matrix.org}               % optional, remove / comment the line if not wanted
+% \social[discord]{jdoe\#0000}                       % optional, remove / comment the line if not wanted
+
+% YouTube links can take several forms, depending on how your account and channel are set up.
+% See https://support.google.com/youtube/answer/6180214 for more information.
+% \social[youtube]{c/jdoeschannel}                   % optional, remove / comment the line if not wanted; Custom URL             - can be shorted by removing 'c/'
+% \social[youtube]{channel/XXXXXX}                   % optional, remove / comment the line if not wanted; Channel URL (ID-based) - can not be shortened
+% \social[youtube]{user/jdoe}                        % optional, remove / comment the line if not wanted; Legacy username URL    - if jdoe is not already claimed by a Custom URL, can be shortened by removing 'user/'
+
+% \social[twitch]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[tiktok]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[instagram]{jdoe}                           % optional, remove / comment the line if not wanted
+
+% \social[soundcloud]{jdoe}                          % optional, remove / comment the line if not wanted
+
+% \social[steam]{jdoe}                               % optional, remove / comment the line if not wanted
+% \social[xbox]{jdoe}                                % optional, remove / comment the line if not wanted
+% \social[playstation]{jdoe}                         % optional, remove / comment the line if not wanted
+% \social[battlenet]{jdoe\#0000}                     % optional, remove / comment the line if not wanted
+
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+Highly motivated M.Sc. Computer Science student, an aspiring Data Scientist with a strong foundation in Python, Pandas, NumPy, and Scikit-learn. Adept at leveraging EDA and ML algorithms for actionable business insights and eager to contribute to any data science initiatives.
+
+\section{Education}
+\cventry{2019 -- 2024}{B.Sc.}{Ho Chi Minh City University of Technology}{HCM}{3.3 GPA}{Major in Computer Engineering}  % arguments 3 to 6 can be left empty
+\cventry{2023 -- Pres.}{M.Sc.}{Ho Chi Minh City University of Technology}{HCM}{}{Major in Computer Science}  % arguments 3 to 6 can be left empty
+
+\section{Skills}
+\cvitem{Data Science}{Python (Intermediate), Pandas, NumPy, Scikit-learn, Matplotlib, PyTorch, Apache Spark (Basic), Exploratory Data Analysis (EDA), Data Visualization.}
+\cvitem{Databases}{SQL (Familiar), Data Modeling (Learned in Data Engineering coursework)}
+\cvitem{Machine Learning}{Supervised Learning (Linear Regression, Logistic Regression, Decision Trees, Random Forest, Naive Bayes), Unsupervised Learning (Clustering, Dimensionality Reduction), Model Evaluation, Feature Engineering.}
+\cvitem{Tools}{Jupyter Notebooks, Git, GitHub, Docker, AWS (EC2).}
+\cvitem{Languages}{Vietnamese (native), English (IELTS 8.0)}
+
+\section{Work Experience}
+    \cventry{2023--2024}{Platform Validation Technical Intern}{Ampere Computing Vietnam}{HCM}{}{Performed Approved Vendor List (AVL) validation for server processors, testing third-party component functionality and compatibility with hardware platforms.\newline{}
+Detailed achievements:
+\begin{itemize}
+    \item Led and presented for AVL interns at an international company event.
+    \item Learned and shared with colleagues about the specifics of NVMe SSD test and improvement methods.
+\end{itemize}}
+
+%\section{Skill matrix}
+%% Skill matrix as an alternative to rate one's skills, computer or other. 
+
+%% Adjusts width of skill matrix columns. 
+%% Usage \setcvskillcolumns[<width>][<factor>][<exp_width>]
+%% <width>, <exp_width> should be lengths smaller than \textwidth, <factor> needs to be between 0 and 1.
+%% Examples:
+% \setcvskillcolumns[5em][][]%    adjust first column. Same as \setcvskillcolumns[5em]
+% \setcvskillcolumns[][0.45][]%   adjust third (skill) column. Same as \setcvskillcolumns[][0.45]
+% \setcvskillcolumns[][][\widthof{``Year''}]%     adjust fourth (years) column.
+%\setcvskillcolumns[][0.45][\widthof{``Year''}]%
+% \setcvskillcolumns[\widthof{``Languag''}][0.48][]
+% \setcvskillcolumns[\widthof{``Languag''}]%
+
+%% Adjusts width of legend columns. Usage \setcvskilllegendcolumns[<width>][<factor>]
+%% <factor> needs to be between 0 and 1. <width> should be a length smaller than \textwidth
+%% Examples:
+%\setcvskilllegendcolumns[][0.45]
+% \setcvskilllegendcolumns[\widthof{``Legend''}][0.45]
+% \setcvskilllegendcolumns[0ex][0.46]% this is usefull for the banking style
+
+%% Add a legend if you are using \cvskill{<1-5>} command or \cvskillentry
+%% Usage \cvskilllegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
+% \cvskilllegend % insert default legend without lines
+%\cvskilllegend*[1em]{}% adjust post spacing
+% \cvskilllegend*{Legend}%  Alternatively add a description string
+%% adjust the legend entries for other languages, here German
+% \cvskilllegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
+
+%% Alternative legend style with the first three skill levels in one column
+%% Usage \cvskillplainlegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
+% \setcvskilllegendcolumns[][0.6]%  works for classic, casual, banking
+% \setcvskilllegendcolumns[][0.55]%  works better for oldstyle and fancy
+% \cvskillplainlegend{}
+% \cvskillplainlegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte/Guru]{Legende}
+
+%% Add a head of the skill matrix table with descriptions.
+%% Usage \cvskillhead[<post_padding>][<Level>][<Skill>][<Years>][<Comment>]%
+%\cvskillhead[-0.1em]%   this inserts the standard legend in english and adjust padding
+%% Adjust head of the skill matrix for other languages
+% \cvskillhead[0.25em][Level][F\"ahigkeit][Jahre][Bemerkung]
+
+%% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}% 
+%% Example usages:
+
+%\cvskillentry*{Language:}{1}{Verilog}{1}{Simple 7-seg clock on FPGA dev board, parse and encapsulate
+%TCP/UDP packet in simulation}
+%
+%\cvskillentry{}{1}{Python}{2}{Simple GUI, basic OpenCV face detection, math and plotting,
+%simple project with Raspberry Pi}
+%
+%\cvskillentry{}{2}{C/C++}{3}{Terminal program, simple multi-threading, micro-controller}
+%\cvskillentry*{OS:}{2}{Linux}{2}{Linux as main OS, know how to fix things (when I break them)}% notice the use of the starred command and the optional 
+%
+%\cvskillentry*{Others:}{1}{Electronics}{3}{Basic electronics experience, simple troubleshooting and PCB design/assembly}% notice the use of the starred command and the optional 
+%
+%\cvskillentry{}{1}{\LaTeX}{3}{Basic reports and presentations}
+
+%% \cvskill{<0-5>} command
+% \cvitem{\textbackslash{cvskill}:}{Skills can be visually expressed by the \textbackslash{cvskill} command, e.g. \cvskill{2}}
+
+% \section{Interests}
+% \cvitem{hobby 1}{Description}
+% \cvitem{hobby 2}{Description}
+% \cvitem{hobby 3}{Description}
+
+% \section{References}
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\section{Project Details}
+
+\subsection{Retail Customer Segmentation - Mall Customer Segmentation Data on Kaggle}
+\cvlistitem{Performed EDA using Pandas and Matplotlib to visualize dependencies between customer age, annual income, and spending score.}
+\cvlistitem{Implemented K-Means (cluster count via inertia) and DBSCAN segmentation in Scikit-learn using annual income and spending score. K-Means proved more effective as DBSCAN led to suboptimal groupings or unclustered points. Result can be used as starting point for further customer segmentation.}
+
+\subsection{Answering Business Questions - E-commerce Business Transaction on Kaggle}
+\cvlistitem{Executed EDA and data cleaning on 500,000+ e-commerce transactions (1-year period) to identify sales trends and product popularity.}
+\cvlistitem{Analyzed sales trends for top-demand products, incorporating out-of-stock cancellation data, to improve demand forecasting and inventory planning.}
+\cvlistitem{Applied Market Basket Analysis using FP-Growth (mlxtend library) to identify common item sets, informing future targeted bundling and recommendation strategies.}
+
+\subsection{Computer vision - Vehicle type classification on VeRi776 dataset}
+\cvlistitem{Explored the VeRi776 dataset, identifying class imbalance and correlations between vehicle color and type.}
+\cvlistitem{Fine-tuned pretrained ResNet, MobileNet, and EfficientNet models (1 epoch each due to constraints) with PyTorch, comparing speed and performance. ResNet achieved a 0.89 F1-score; further gains anticipated with extended training and balanced data.}
+
+\end{document}
+
+
+%% end of file `template.tex'.

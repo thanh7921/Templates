@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
@@ -15,7 +15,7 @@
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.92]{geometry}
 \recomputelengths
 %\setlength{\footskip}{149.60005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -43,22 +43,23 @@
 
 % personal data
 \name{Nguyễn Trần Phước Thành}{}
-\title{Aspiring engineer}                               % optional, remove / comment the line if not wanted
-\born{7 September 2001}                                 % optional, remove / comment the line if not wanted
-\address{Quận Bình Thạnh}{Ho Chi Minh City}{Vietnam}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\title{Aspiring embedded engineer}                               % optional, remove / comment the line if not wanted
+%\born{7 September 2001}                                 % optional, remove / comment the line if not wanted
+\address{Binh Thanh District}{Ho Chi Minh City}{Vietnam}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+84 342384838}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 % \phone[fixed]{+2~(345)~678~901}
 % \phone[fax]{+3~(456)~789~012}
 \email{tranphuocthanh01@gmail.com}                               % optional, remove / comment the line if not wanted
 % \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-\photo[80pt][0pt]{./portrait.jpg}
+\photo[80pt][0pt]{formal_4x6.jpg}
 %\quote{Be brave. Be curious. Be kind.}
 
 % Social icons
 % \social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
 % \social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
 
-%\social[github]{ntpt7921}                              % optional, remove / comment the line if not wanted
+\social[github]{ntpt7921}                              % optional, remove / comment the line if not wanted
+%\social[github]{ntpthanh7921}
 % \social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
 % \social[codeberg]{jdoe}                            % optional, remove / comment the line if not wanted
 % \social[bitbucket]{jdoe}                           % optional, remove / comment the line if not wanted
@@ -118,10 +119,9 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-I am a motivated life-long learner with a passion in engineering discipline, in part to satiate my
-    curiosity and in part to give back to the world with what I do best. I am seeking a part-time
-    position to help me earn enough money to further my studies, while also utilize my above average
-    English skill to help those in need.
+I am a motivated lifelong learner with a passion for the engineering discipline. 
+I pursue engineering to satisfy my curiosity and to give back to the world what I consider the best of me. 
+Fascinated by the inner workings of computers, I studied Computer Engineering with a focus on VLSI logic design and embedded systems.
 
 \section{Education}
 \cventry{2019 -- 2024}{B.Sc.}{Ho Chi Minh City University of Technology}{HCM}{3.3 GPA}{Major in Computer Engineering}  % arguments 3 to 6 can be left empty
@@ -130,27 +130,20 @@ I am a motivated life-long learner with a passion in engineering discipline, in 
 \section{Experience}
 \subsection{Vocational}
 
-    \cventry{2023--2024}{Platform Validation Technical Intern}{Ampere Computing Vietnam}{HCM}{}{Performed AVL (Approved Vendor List) work for Ampere's server processors. This involved testing 3rd party component for correct functionality and assuring compatibility with pre-existing/developing hardware platforms.\newline{}
+    \cventry{2023--2024}{Platform Validation Technical Intern}{Ampere Computing Vietnam}{HCM}{}{Performed AVL (Approved Vendor List) work for Ampere's server processors. This involved testing third-party components for correct functionality and assuring compatibility with preexisting/developing hardware platforms.\newline{}
 Detailed achievements:
 \begin{itemize}
-    \item Took charge of and presented on behalf of the AVL interns in international company event.
-    \item Learned and shared with colleagues about specifics of NVMe SSD test and improvement
-        methods.
+    \item Took charge of and presented on behalf of the AVL interns in an international company event.
+    \item By highlighting impaired performance under constant high write load of conventional SSDs, a bursty method of testing is proposed to achieve performance closer to the manufacturer's specification.
+    \item Utilized Bash/Python scripts to automate the collection of NIC performance data, improving efficiency.
 \end{itemize}}
 
-\subsection{Miscellaneous}
-
-\cventry{2024--today}{Tutoring}{Neighbor's kid}{HCM}{}{Tutoring Math and English for two
-    kid currently in junior high school.}
-
-\section{Languages}
-\cvitemwithcomment{Vietnamese}{Native}{Fluent}
-\cvitemwithcomment{English}{IELTS 8.0}{Listening(9), Reading(9), Writing(7), Speaking(6)}
-
-% \section{Computer skills}
-% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-% \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\section{Skills}
+\cvitemwithcomment{Languages}{C/C++, Python}{Intermediate level}
+\cvitemwithcomment{Embedded}{STM32, ESP32, UART, I2C/SPI}{Working knowledge level}
+\cvitemwithcomment{Logic design}{Verilog, Altera/Xilinx FPGA, validation}{Intermediate level}
+\cvitemwithcomment{Electronics}{Multimeter, oscilloscope, reading schematics, debugging}{Hobbist level}
+\cvitem{Others}{English (IELTS 8.0)}
 
 %\section{Skill matrix}
 %% Skill matrix as an alternative to rate one's skills, computer or other. 
@@ -240,6 +233,42 @@ Detailed achievements:
 %\nocitemisc{misc1,misc2,misc3}
 %\bibliographystylemisc{plain}
 %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\section{Project Details}
+
+\subsection{Simple RISC-V pipelined processor on Zynq SoC (FPGA)}
+\cvlistitem{Basic RV32I intruction set, 6-stage pipeline with forwarding. Program binary is stored in BRAM.}
+\cvlistitem{Tested and passed by RISCOF - The RISC-V Compatibility Framework.}
+\cvlistitem{Simple printf() and scanf() functions, writing to custom memory-mapped UART IO. Design is assessed with Dhrystone benchmark. Text-based snake game is also ported to run on UART IO.}
+
+\subsection{TCP/UDP packet parsing/encapsulating module (FPGA)}
+\cvlistitem{Take in 32 bit word stream of IPv4 data frame, parse to extract various field of the
+assumed contained UDP/TCP datagram, storing application data into a cache.}
+\cvlistitem{Or given application data within the cache, perform encapsulation to create a IPv4
+packet with chosen protocol (UDP or TCP) and field values.}
+\cvlistitem{Verified functionality through simulation and visual inspection of output values for various network packets.}
+
+\subsection{Simple 7-segment clock (FPGA)}
+\cvlistitem{Clock displaying time of date in 24-hour format, up to the second. Can change time with button.}
+\cvlistitem{Implemented on the DE-10 Lite development board, using Altera tool-chain.}
+\cvlistitem{Verified by simulation. The final design is also tested in hardware and performed satisfactorily.}
+
+\subsection{NFC + Facial Recognition Attendance System (Raspberry Pi}
+\cvlistitem{Admittedly a fail project, trying to use NFC card (cheap MiFare), associate that
+with face model data of each individual store on the Raspberry Pi to take attendance.}
+\cvlistitem{OpenCV model chosen prioritize speed, since using Raspberry Pi.}
+\cvlistitem{Technical reason for failing: insufficient memory on the Raspberry Pi, I should
+have bought the version with more RAM.}
+
+\subsection{Simplified smart house implementation with Yolo:bit (ESP32)}
+\cvlistitem{Simplified programming of ESP32 chip (on Yolo:bit), running MicroPython.}
+\cvlistitem{Setup AWS EC2 server to act as MQTT broker.}
+\cvlistitem{Allow for remote control of devices, automatic activation based on environmental conditions.}
+
+\subsection{Simple traffic light system with pedestrian yielding (STM32)}
+\cvlistitem{Final project for the Embedded course back in university. Using STM32 dev-board and simple LEDs/buttons for the system implementation.}
+\cvlistitem{Custom scheduler (support priority, no preemption) with binary heap priority queue. Timing using built-in timers. Button de-bouncing and all task scheduling uses the custom scheduler.}
+
 
 \end{document}
 
